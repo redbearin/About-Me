@@ -12,7 +12,11 @@ if (runway === 'y') {
   console.log('Ice runway guess: ' + runway);
   alert ('Yes, I frequently landed on an ice runways when I worked north of the Arctic Circle.');
 }
-else {
+if (runway === 'no') {
+  console.log('Ice runway guess: ' + runway);
+  alert ('Good guess, but the answer is yes. When I worked north of the Arctic Circle, we frequnetly had to land on ice runways.');
+}
+if (runway === 'n') {
   alert ('Good guess, but the answer is yes. When I worked north of the Arctic Circle, we frequnetly had to land on ice runways.');
   console.log('Ice runway guess: ' + runway);
 }
@@ -27,7 +31,11 @@ if (desert === 'n') {
   console.log('Desert guess: ' + desert);
   alert ('You are correct. I live in the Sierras near Lake Tahoe, so there are a lot of big pine trees.');
 }
-else {
+if (desert === 'yes') {
+  console.log('Desert guess: ' + desert);
+  alert ('Good guess, but the answer is no! I live in the Sierras near Lake Tahoe.');
+}
+if (desert === 'y') {
   alert ('Good guess, but the answer is no! I live in the Sierras near Lake Tahoe.');
   console.log('Desert guess: ' + desert);
 }
@@ -42,8 +50,12 @@ if (synBiology === 'y') {
   console.log('Desert guess: ' + synBiology);
   alert ('You are correct, I am fascinated with the potential of biological computing.');
 }
-else {
-  alert ('Good guess, but biological computer a big interest of mine.');
+if (synBiology === 'no') {
+  console.log('Desert guess: ' + synBiology);
+  alert ('Good guess, but biological computing a big interest of mine.');
+}
+if (synBiology === 'n') {
+  alert ('Good guess, but biological computing a big interest of mine.');
   console.log('Desert guess: ' + synBiology);
 }
 
@@ -57,7 +69,11 @@ if (greasySpoon === 'n') {
   console.log('Cracker Barrel guess: ' + greasySpoon);
   alert ('You are correct. Cracker Barrel is one of the least favorite restaurants.');
 }
-else {
+if (greasySpoon === 'yes') {
+  console.log('Cracker Barrel guess: ' + greasySpoon);
+  alert ('Since I lived in Florida for a long time, it is a good assumption that I like to eat at Cracker Barrel. Actually I never adapted to Southern food, so it is one of my least favorite places to dine.');
+}
+if (greasySpoon === 'y') {
   alert ('Since I lived in Florida for a long time, it is a good assumption that I like to eat at Cracker Barrel. Actually I never adapted to Southern food, so it is one of my least favorite places to dine.');
   console.log('Cracker Barrel guess: ' + greasySpoon);
 }
@@ -72,7 +88,11 @@ if (yoga === 'y') {
   console.log('Yoga guess: ' + yoga);
   alert ('You are correct. I find power yoga a good way to workout and therapeutic yoga a way to decompress.');
 }
-else {
+if (yoga === 'no') {
+  console.log('Yoga guess: ' + yoga);
+  alert ('Good guess! Many people think I am a runner, but I prefer yoga over foot races.');
+}
+if (yoga === 'n') {
   alert ('Good guess! Many people think I am a runner, but I prefer yoga over foot races.');
   console.log('Yoga guess: ' + yoga);
 }
