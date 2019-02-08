@@ -1,17 +1,42 @@
-h1 {
-    color: rgb(38, 40, 44);
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-}
 
-h2 {
-    color: rgb(151, 14, 14);
-    font-family: arial, sans-serif;
+.pageTitle {    
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    color:rgb(5, 5, 5);
+    padding: 2px 2px 0px 2px;
+    margin: 2px 2px 0px 2px;
+    width: 500px;}
+
+.underTitle {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
     font-style: italic;
+    color:rgb(194, 39, 39);
+    padding: 2px 2px 15px 2px;
+    width: 500px;}
+
+.blockTitles {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    background-color: rgb(77, 101, 179);
+    color: white;
+    box-sizing: border-box;
+    padding: 2px;
+    width: 400px;}
+    
+.stdText {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    color: black;
+    padding: 2px;
+    width: 400px;}
 }
 
-body {
-    font-family: arial, sans-serif;
-    background-color: rgb(137, 150, 194); 
 
-}
