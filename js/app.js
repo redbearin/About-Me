@@ -1,4 +1,4 @@
-//use strict;
+'use strict';
 
 //Title for the console log.
 console.log('Information about Me');
@@ -158,38 +158,40 @@ for (var k = 0; k <6; k++) {
   alert(stateList[k]);
 }
 
-
 // NUMBER GAME - Ask the viewer to guess the number.
 
 //number I picked
-var myNumber = 7; 
+var myNumber = 7;
 
-//user picks a number
-var userPick = parseInt(prompt('I have picked a number between 1 and 10. Guess the number')); 
-console.log('Integer number: ' + userPick + myNumber);
+//user picks a number (first pick)
+var userPick2 = parseInt(prompt('I have picked a number between 1 and 10. You have three tries to guess the number. Take your first guess.'), 10);
+console.log('First pick: ' + userPick2);
 
 //Allows the user to try to guess the number 4 times. Provides feedback on whether
 //the guess is less than, more than or correct.
-for (var i = 0; i < 3; i++) {
-  if (myNumber === userPick) {
+for (var m = 1; m < 4; m++) {
+  if (myNumber > userPick2) {
+    userPick2 = parseInt(prompt('The number I picked is more than the number you selected. Please try again.'));
+    wrongCounter += 1;
+    console.log('Pick: ' + userPick2);
+    m += m;
+  }
+  else if (myNumber < userPick2) {
+    userPick2 = parseInt(prompt('The number I picked is less than the number you selected. Please try again.'));
+    wrongCounter += 1;
+    console.log('Pick: ' + userPick2);
+    m += m;
+  }
+  else {
     alert('Congratulations! You picked the number I selected, ' + myNumber);
     correctCounter += 1;
-    console.log('Correct pick: ' + userPick + myNumber);
-    i = 3;
-  }
-  else if (myNumber > userPick) {
-    userPick = parseInt(prompt('The number I picked is more than the number you selected. Please try again.'));
-    wrongCounter += 1;
-  }
-  else if (myNumber < userPick) {
-    userPick = parseInt(prompt('The number I picked is less than the number you selected. Please try again.'));
-    wrongCounter += 1;
+    m = 4;
   }
 }
 
 //provides the number if the user did not guess the number in four tries
-if (myNumber !== userPick) {
-  alert ('The number was ' + myNumber + '. Sorry you did not get the right number this time. Maybe next time');
+if (myNumber !== userPick2) {
+  alert ('The number was ' + myNumber + '. Sorry you did not get the right number in 3 picks this time. Maybe next time.');
 }
 
 // ANSWER COUNTER SUMMARY
